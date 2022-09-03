@@ -1,0 +1,3 @@
+<modal model:show="{{show}}" background="">
+    <video class="video" loop="true" controls="{{false}}" src="https://video-qn.51miz.com/preview/element/00/01/25/00/E-1250028-7BCA9885.mp4" autoplay="true"></video>
+</modal>

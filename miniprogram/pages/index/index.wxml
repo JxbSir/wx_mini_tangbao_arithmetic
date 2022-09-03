@@ -11,4 +11,6 @@
 
 <rules wx:if="{{showRules}}" model:show="{{showRules}}"></rules>
 
-<study wx:if="{{showStudy}}" model:show="{{showStudy}}"></study>
+<study wx:if="{{showStudy}}" model:show="{{showStudy}}" bind:callback="finishStudy"></study>
+
+<yanhua wx:if="{{showYanhua}}" model:show="{{showYanhua}}"></yanhua>

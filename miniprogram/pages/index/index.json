@@ -2,6 +2,7 @@
   "usingComponents": {
       "password": "../../components/password/password",
       "rules": "../../components/rules/rules",
-      "study": "../../components/study/study"
+      "study": "../../components/study/study",
+      "yanhua": "../../components/yanhua/yanhua"
   }
 }

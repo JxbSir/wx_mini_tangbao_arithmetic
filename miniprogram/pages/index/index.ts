@@ -9,6 +9,7 @@ Page({
         showPassword: false,
         showRules: false,
         showStudy: false,
+        showYanhua: false,
     },
     onShareAppMessage: function () {
         return {
@@ -39,4 +40,10 @@ Page({
             showStudy: true
         })
     },
+    finishStudy: function() {
+
+        this.setData({
+            showYanhua: true
+        })
+    }
 })

@@ -6,6 +6,10 @@ Component({
      */
     properties: {
         show: Boolean,
+        background: {
+            type: String,
+            value: "white"
+        }
     },
 
     /**

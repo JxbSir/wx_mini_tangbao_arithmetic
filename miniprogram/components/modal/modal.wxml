@@ -1,6 +1,6 @@
 <view class="bg h-center">
     <view class="h-center">
-        <view class="main">
+        <view class="main" style="background: {{background}};">
             <slot></slot>
         </view>
     </view>
