@@ -1,6 +1,7 @@
 
 const key = "tangbao_config_key"
 
+
 const setConifgData = (data) => {
     wx.setStorageSync(key, JSON.stringify(data));
 }
