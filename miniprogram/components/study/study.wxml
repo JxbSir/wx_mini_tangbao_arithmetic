@@ -17,7 +17,7 @@
             =
             </view>
             <view class="qa-answer h-center">
-                <input class="qa-answer-input" value="{{answer}}" type="digit" placeholder="？" bindinput="onAnswerChnage"> </input>
+                <input class="qa-answer-input" focus="{{focus}}" auto-focus="true" cursor-spacing="80" adjust-position="true" value="{{answer}}" type="digit" placeholder="？" bindinput="onAnswerChnage"> </input>
             </view>
         </view>
         <view class="opt h-center">

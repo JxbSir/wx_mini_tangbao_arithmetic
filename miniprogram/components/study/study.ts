@@ -15,6 +15,7 @@ Component({
      * 组件的初始数据
      */
     data: {
+        focus: false,
         index: -1,
         question: null,
         questions: [],
@@ -25,7 +26,7 @@ Component({
         attached: function () {
             const errorList = getErrorList();
             console.log(errorList);
-            
+
             const config = getConfigData();
             if (config == null) {
                 wx.showToast({
@@ -52,7 +53,7 @@ Component({
             this.setData({
                 index: 0,
                 question: questions[0],
-                questions: questions
+                questions: questions,
             });
         },
     },
@@ -85,7 +86,8 @@ Component({
                 innerAudioContext.autoplay = true;
                 innerAudioContext.play()
                 this.setData({
-                    answer: ""
+                    answer: "",
+                    focus: true
                 });
                 return
             }
@@ -103,17 +105,18 @@ Component({
 
             const index = this.data.index + 1;
             if (index >= this.data.questions.length) {
-                wx.showToast({
-                    title: '全部做完了',
-                    icon: 'success'
-                })
+                // wx.showToast({
+                //     title: '全部做完了',
+                //     icon: 'success'
+                // })
                 return
             }
             const question = this.data.questions[index];
             this.setData({
                 index: index,
                 question: question,
-                answer: ""
+                answer: "",
+                focus: true
             });
         }
     }
