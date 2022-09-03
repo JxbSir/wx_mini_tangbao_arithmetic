@@ -28,12 +28,9 @@ Component({
             console.log(errorList);
 
             const config = getConfigData();
-            if (config == null) {
+            if (config != null) {
                 wx.showToast({
                     title: '请先家长设置规则'
-                });
-                this.setData({
-                    show: false,
                 });
                 return;
             }

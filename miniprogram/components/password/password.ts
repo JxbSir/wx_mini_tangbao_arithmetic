@@ -1,4 +1,7 @@
 // components/password/password.ts
+
+import { getPassword, setPassword } from '../../utils/config'
+
 Component({
     /**
      * 组件的属性列表
@@ -25,19 +28,28 @@ Component({
             })
         },
         onSubmit: function() {
-            if (this.data.password != "123123") {
-                wx.showToast({
-                    title: '密码错误',
-                    icon: 'error'
-                })
-                return
+            const pwd = getPassword();
+            console.log(pwd);
+            if (pwd == null || pwd.length == 0) {
+                setPassword(this.data.password);
+                this.triggerEvent('callback', {}, {});
+                this.setData({
+                    show: false
+                });
+                return;
             }
-
-            this.triggerEvent('callback', {}, {})
-
-            this.setData({
-                show: false
+            else if (this.data.password == pwd) {
+                this.triggerEvent('callback', {}, {});
+                this.setData({
+                    show: false
+                });
+                return;
+            }
+            wx.showToast({
+                title: '密码错误',
+                icon: 'error'
             });
+    
         }
     }
 })

@@ -2,6 +2,8 @@
 // 获取应用实例
 const app = getApp<IAppOption>()
 
+import { getConfigData, setConifgData } from '../../utils/config'
+
 Page({
     data: {
         showPassword: false,
@@ -25,6 +27,14 @@ Page({
         })
     },
     onShowStudy: function() {
+        const config = getConfigData();
+        if (config == null) {
+            wx.showToast({
+                title: '请先家长设置规则'
+            });
+            this.onShowPassword();
+            return;
+        }
         this.setData({
             showStudy: true
         })
