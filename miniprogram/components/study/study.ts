@@ -82,6 +82,13 @@ Component({
             
 
             const index = this.data.index + 1;
+            if (index >= this.data.questions.length) {
+                wx.showToast({
+                    title: '全部做完了',
+                    icon: 'success'
+                })
+                return
+            }
             const question = this.data.questions[index];
             this.setData({
                 index: index,
