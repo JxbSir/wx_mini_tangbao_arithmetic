@@ -1,1 +1,67 @@
-/* components/study/study.wxss */
+.h-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    width: 600px;
+    height: 300px;
+}
+
+.header {
+    height: 80px;
+    font-size: 30px;
+}
+
+.qa-left {
+    float: left;
+    font-size: 80px;
+    font-weight: bolder;
+    height: 120px;
+    width: 30%;
+}
+
+.qa-right {
+    float: left;
+    font-size: 80px;
+    font-weight: bolder;
+    height: 120px;
+    width: 20%;
+}
+
+.qa-plus {
+    float: left;
+    font-size: 80px;
+    font-weight: bolder;
+    height: 120px;
+    width: 10%;
+}
+
+.qa-answer {
+    float: left;
+    font-size: 80px;
+    font-weight: bolder;
+    height: 120px;
+    width: 30%;
+}
+
+.qa-answer-input {
+    height: 120px;
+    text-align: center;
+}
+
+.opt {
+    clear: both;
+}
+
+.opt-submit {
+    background: linear-gradient(to right, rgb(250, 48, 98), rgb(207, 76, 240));
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+}

@@ -6,6 +6,7 @@ Page({
     data: {
         showPassword: false,
         showRules: false,
+        showStudy: false,
     },
     onShareAppMessage: function () {
         return {
@@ -22,5 +23,10 @@ Page({
         this.setData({
             showRules: true
         })
-    }
+    },
+    onShowStudy: function() {
+        this.setData({
+            showStudy: true
+        })
+    },
 })

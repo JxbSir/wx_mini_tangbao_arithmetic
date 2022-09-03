@@ -1,2 +1,27 @@
-<!--components/study/study.wxml-->
-<text>components/study/study.wxml</text>
+<modal model:show="{{show}}">
+    <view class="box">
+        <view class="header h-center">
+            {{ index + 1 }} / {{questions.length}}
+        </view>
+        <view class="qa">
+            <view class="qa-left h-center">
+            {{ question.left }}
+            </view>
+            <view class="qa-plus h-center">
+            +
+            </view>
+            <view class="qa-right h-center">
+            {{ question.right }}
+            </view>
+            <view class="qa-plus h-center">
+            =
+            </view>
+            <view class="qa-answer h-center">
+                <input class="qa-answer-input" value="{{answer}}" type="digit" placeholder="？" bindinput="onAnswerChnage"> </input>
+            </view>
+        </view>
+        <view class="opt h-center">
+            <view class="opt-submit h-center" bindtap="onSubmit">确定</view>
+        </view>
+    </view>
+</modal>
