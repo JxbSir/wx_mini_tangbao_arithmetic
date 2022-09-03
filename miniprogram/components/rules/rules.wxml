@@ -1,0 +1,42 @@
+<modal model:show="{{show}}">
+    <view class="box">
+        <view class="num-box">
+            <view class="num-title h-center">
+                <view>左侧数字：</view>
+
+            </view>
+            <view class="num-min">
+                <input class="num-input" value="{{leftMin}}" type="digit" bindinput="bindLeftMinTextChange"></input>
+            </view>
+            <view class="sep"></view>
+            <view class="num-max">
+                <input class="num-input" value="{{leftMax}}" type="digit" bindinput="bindLeftMaxTextChange"></input>
+            </view>
+        </view>
+        <view style="width: 30px; float: left; height: 30px;"></view>
+        <view class="num-box">
+            <view class="num-title h-center">
+                <view>右侧数字：</view>
+            </view>
+            <view class="num-min">
+                <input class="num-input" value="{{rightMin}}" type="digit" bindinput="bindRightMinTextChange"></input>
+            </view>
+            <view class="sep"></view>
+            <view class="num-max">
+                <input class="num-input" value="{{rightMax}}" type="digit" bindinput="bindRightMaxTextChange"></input>
+            </view>
+        </view>
+        <view class="rad-num">
+            <view class="num-title h-center">
+                <view>每次题量：</view>
+            </view>
+            <view class="num-min">
+                <input class="num-input2" value="{{count}}" type="digit" bindinput="bindCountTextChange"></input>
+            </view>
+        </view>
+        <view class="opt">
+            <view class="opt-submit h-center" bindtap="onSubmit">确定</view>
+        </view>
+        <view style="clear: both;float: left; height: 20px; width: 100px;"></view>
+    </view>
+</modal>

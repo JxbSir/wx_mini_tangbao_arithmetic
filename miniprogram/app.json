@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "pageOrientation": "landscape",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "backgroundColor": "#ffcc4d",
+    "backgroundTextStyle": "light"
+
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

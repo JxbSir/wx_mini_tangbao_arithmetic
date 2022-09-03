@@ -1,0 +1,14 @@
+
+.h-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.v-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,12 @@
+<view class="main">
+    <view class="header-opt">
+        <view class="rule" bindtap="onShowPassword">规则设置</view>
+    </view>
+    <view class="footer-opt h-center">
+        <view class="start h-center">开始学习</view>
+    </view>
+</view>
+
+<password wx:if="{{showPassword}}" model:show="{{showPassword}}" bind:callback="validPassSuccess"></password>
+
+<rules wx:if="{{showRules}}" model:show="{{showRules}}"></rules>

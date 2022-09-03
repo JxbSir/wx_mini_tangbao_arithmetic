@@ -1,0 +1,21 @@
+.bg {
+    background: #00000066;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; 
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    background: white;
+    border-radius: 10px;
+}
+
+.h-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,81 @@
+.box {
+    width: 500px;
+    padding: 20px;
+}
+
+.num-box {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.num-title {
+    float: left;
+    height: 40px;
+    width: 80px;
+}
+
+.num-min {
+    float: left;
+}
+
+.num-max {
+    float: left;
+}
+
+.num-input {
+    border: solid 1px #ccc;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 6px;
+}
+
+.num-input2 {
+    border: solid 1px #ccc;
+    height: 40px;
+    width: 123px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 6px;
+}
+
+.sep {
+    float: left;
+    height: 1px;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background: #999;
+}
+
+.rad-num {
+    clear: both;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.opt {
+    float: left;
+}
+
+.opt-submit {
+    background: linear-gradient(to right, rgb(250, 48, 98), rgb(207, 76, 240));
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+}
+
+.h-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}

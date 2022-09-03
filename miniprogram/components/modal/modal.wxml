@@ -1,0 +1,7 @@
+<view class="bg h-center">
+    <view class="h-center">
+        <view class="main">
+            <slot></slot>
+        </view>
+    </view>
+</view>
