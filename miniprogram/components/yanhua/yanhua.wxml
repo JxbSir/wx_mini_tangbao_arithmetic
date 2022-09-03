@@ -1,3 +1,14 @@
-<modal model:show="{{show}}" background="">
-    <video class="video" loop="true" controls="{{false}}" src="https://video-qn.51miz.com/preview/element/00/01/25/00/E-1250028-7BCA9885.mp4" autoplay="true"></video>
-</modal>
+<view class="bg">
+    <image class="main h-center" src="../../images/finish.jpeg">
+    </image>
+    <view class="yanhua">
+        <image style="height: 400px; width: 400px; float: left;" src="../../images/yanhua3.gif"></image>
+
+        <image style="height: 400px; width: 400px; float: right;" src="../../images/yanhua1.gif"></image>
+
+        <view class="h-center footer-yanhua">
+            <image style="height: 400px; width: 400px; float: left;" src="../../images/yanhua2.gif"></image>
+            <image style="height: 400px; width: 400px; float: right;" src="../../images/yanhua3.gif"></image>
+        </view>
+    </view>
+</view>

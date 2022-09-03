@@ -38,6 +38,7 @@ Page({
         }
         this.setData({
             showStudy: true
+            // showYanhua: true
         })
     },
     finishStudy: function() {

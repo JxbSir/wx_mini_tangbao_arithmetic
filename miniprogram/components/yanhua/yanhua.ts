@@ -27,7 +27,7 @@ Component({
 
                 setTimeout(() => {
                     innerAudioContext.stop();
-                }, 10000);
+                }, 7000);
             }, 3000);
 
             const that = this;

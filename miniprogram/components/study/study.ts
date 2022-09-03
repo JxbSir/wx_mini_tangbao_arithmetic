@@ -109,7 +109,11 @@ Component({
                     that.setData({
                         show: false
                     })
-                    that.triggerEvent("callback", {}, {})                    
+
+                    // setTimeout(() => {
+                        that.triggerEvent("callback", {}, {})
+                    // }, 2000);
+
                 }, 1000);
                 return
             }

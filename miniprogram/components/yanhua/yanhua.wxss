@@ -1,5 +1,39 @@
-.video {
-    width: 600px;
-    height: 300px;
-    border-radius: 6px;
+.h-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.bg {
+    background: #00000066;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; 
+    width: 100vw;
+    height: 100vh;
+}
+
+.yanhua {
+    float: left;
+    width: 100vw;
+}
+
+.footer-yanhua {
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    /* background: red; */
+}
+
+.main {
+    width: 400px;
+    height: 266px;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: calc(100vh / 2 - 133px);
+    margin-left: calc(100vw / 2 - 200px);
 }
