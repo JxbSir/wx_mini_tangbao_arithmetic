@@ -2,13 +2,13 @@
     <image class="main h-center" src="../../images/finish.jpeg">
     </image>
     <view class="yanhua">
-        <image style="height: 400px; width: 400px; float: left;" src="../../images/yanhua3.gif"></image>
+        <image style="height: 400px; width: 400px; float: left;" src="../../images/yanhua2.gif"></image>
 
         <image style="height: 400px; width: 400px; float: right;" src="../../images/yanhua1.gif"></image>
 
         <view class="h-center footer-yanhua">
             <image style="height: 400px; width: 400px; float: left;" src="../../images/yanhua2.gif"></image>
-            <image style="height: 400px; width: 400px; float: right;" src="../../images/yanhua3.gif"></image>
+            <image style="height: 400px; width: 400px; float: right;" src="../../images/yanhua1.gif"></image>
         </view>
     </view>
 </view>
